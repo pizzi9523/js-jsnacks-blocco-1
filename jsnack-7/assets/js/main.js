@@ -24,7 +24,7 @@ while (x <= 9) {
     containerElement.insertAdjacentHTML("beforeend", quadrato);
     containerElement.insertAdjacentHTML("beforeend", " ");
 
-    i++;
+    x++;
 }
 
 
