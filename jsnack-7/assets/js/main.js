@@ -16,6 +16,17 @@ while (i <= 1000) {
     i++;
 }
 
+//elevo le potenze di 2 fino a che il risultato è inferiore di 1000 
+let x = 0;
+while (x <= 9) {
+    let quadrato = Math.pow(2, x);
+    console.log(quadrato);
+    containerElement.insertAdjacentHTML("beforeend", quadrato);
+    containerElement.insertAdjacentHTML("beforeend", " ");
+
+    i++;
+}
+
 
 
 
