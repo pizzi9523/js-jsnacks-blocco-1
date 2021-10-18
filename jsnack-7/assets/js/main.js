@@ -5,7 +5,7 @@ const containerElement = document.querySelector(".container");
 
 
 
-//elevo al cubo i primi n numeri 
+//elevo al quadrato i primi 1000 numeri 
 let i = 0;
 while (i <= 1000) {
     let quadrato = Math.pow(i, 2);
