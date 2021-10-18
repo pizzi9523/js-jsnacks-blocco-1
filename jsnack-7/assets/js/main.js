@@ -6,7 +6,7 @@ const containerElement = document.querySelector(".container");
 
 
 //elevo al quadrato i primi 1000 numeri 
-let i = 0;
+/* let i = 0;
 while (i <= 1000) {
     let quadrato = Math.pow(i, 2);
     console.log(quadrato);
@@ -14,18 +14,21 @@ while (i <= 1000) {
     containerElement.insertAdjacentHTML("beforeend", " ");
 
     i++;
-}
+} */
 
 //elevo le potenze di 2 fino a che il risultato è inferiore di 1000 
 let x = 0;
-while (x <= 9) {
-    let quadrato = Math.pow(2, x);
-    console.log(quadrato);
-    containerElement.insertAdjacentHTML("beforeend", quadrato);
-    containerElement.insertAdjacentHTML("beforeend", " ");
+let quadrato = 0;
+do {
+    quadrato = Math.pow(2, x);
+    if (quadrato <= 1000) {
+        containerElement.insertAdjacentHTML("beforeend", quadrato);
+        containerElement.insertAdjacentHTML("beforeend", " ");
+        console.log(quadrato);
+    }
+    x++
 
-    x++;
-}
+} while (quadrato < 1000);
 
 
 
